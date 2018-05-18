@@ -3,3 +3,8 @@ $.get("text/copy.txt",function(data){
 
 
 });
+
+var fs = require("fs");
+
+var text = "テスト出力";
+fs.writeFile('text/out.txt', text);
